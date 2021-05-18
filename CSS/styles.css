@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+* {
+    font-family: 'Raleway', 'Courier New', Courier, monospace;
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0 ;
+    line-height: 2rem;
+}
+
+
+.section2, .section3, footer {
+    background-color: #F2F2F2;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    
+}
+
+.sign, i {
+    color: #0065FC;
+}
+
+.grey {
+    color: #F2F2F2;
+}
+
+.fa-star, p {
+    font-size: 12px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/****************************/
+
+/********** Header **********/
+
+header {
+    grid-column: span 2;
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+    margin: 40px 20px 40px 40px ;
+}
+
+header img {
+    height: 50px;
+}
+
+header ul li {
+    display: inline;
+    margin: 0 40px ;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+header ul li:hover a {
+    color: #0065FC;
+    transition: 0.5s all;
+}
+
+.fa-map-marker-alt, .fa-chart-line {
+    color: black;
+} 
+
+/********** Recherche de logement **********/
+
+#section1 {
+    grid-column: span 2;
+    grid-row: 2;
+    margin: 40px;
+}
+
+.fa-map-marker-alt {
+    background-color: #F2F2F2;
+    padding: 9.5px 12px 11.5px 12px;
+    border: 1px solid #F2F2F2;
+    border-radius: 12px 0 0 12px;
+    margin-right: -5px;
+}
+
+input {
+    border: 1px solid #F2F2F2;
+    height: 35px;
+    width: 150px;
+    padding-left: 7px;
+    outline: none;
+}
+
+.searchM {
+    display: none;
+}
+
+.searchD {
+    background-color: #0065FC;
+    color: white;
+    padding: 2.1px 12px 2px 12px;
+    border: 1px solid #0065FC;
+    border-radius: 0 12px 12px 0;
+    margin-left: -5px;
+}
+
+.filtres {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    margin: 25px 0 25px 0;
+}
+
+.filtres button  {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    background-color: white;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    padding: 0 20px 4px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.filtres button i { 
+    display: flex;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    background-color: #DEEBFF;
+    border: 1px solid #DEEBFF;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+/******** Hébergements + Populaires ******/
+
+
+.section2 {
+    grid-column: 1;
+    grid-row: 3;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px; 
+    margin-right: 15px;
+}
+
+.hebergements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.imgHebergement {
+    width: 25%;
+    min-width: 180px;
+    max-width: 350px;
+    height: 160px;
+    background-color: white;
+    padding: 3px;
+    margin: 20px 3px 20px 3px;
+    border-radius: 20px;
+    box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
+}
+
+.imgHebergement img {
+    width: 100%;
+    height: 60%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+
+}
+
+.imgHebergement h4 {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 0.5rem;
+    margin-left: 4px;
+}
+
+.imgHebergement p {
+    margin-left: 4px;
+}
+
+ h5 {
+    margin: 50px 0 0 20px;
+}
+.section3 {
+    grid-column: 2;
+    grid-row: 3;
+    padding: 20px 15px 40px 15px;
+    margin: 20px 20px 20px 0;
+    border-radius: 20px; 
+}
+
+.populaires {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgPop {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 25%;
+    max-height: 180px;
+    width: 100%;
+    min-width: 200px;
+    max-width: 400px;
+    padding: 3px;
+    margin: 20px 0 20px 0;
+    border-radius: 20px;
+    box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
+    
+}
+
+.imgPop img {
+    width: 40%;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+}
+
+.textPop {
+    margin-left: 10px;
+}
+
+.textPop h4 {
+    font-weight: 14px;
+    line-height: 1.2rem;
+}
+
+
+.imgHebergement:hover, .imgPop:hover {
+    transform:scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+/*********** Activités ************/
+
+
+.section4 {
+    grid-row: 4;
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: row;
+}
+
+.section4 img {
+    width: 10%;
+}
+
+
+/*********** Footer ************/
+footer {
+     grid-column: 1 / span2;
+     grid-row: 5;
+     display: flex;
+     flex-direction: row;
+ }
+
+.footerlist {
+margin: 20px 80px 20px 20px;
+}
+
+ .footerH {
+    font-size: 16px;
+    font-weight: bold;
+ }
+ li {
+     font-size: 12px;
+ }
