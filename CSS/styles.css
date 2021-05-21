@@ -47,6 +47,10 @@ h1 {
     margin-bottom: 0.6rem;
 }
 
+h4 {
+    font-weight: bold;
+}
+
 p {
     margin-bottom: 1rem;
 }
@@ -66,7 +70,7 @@ header {
 
 header img {
     height: 50px;
-    margin-top: -70px;
+    margin-top: -50px;
 }
 
 nav {
@@ -100,7 +104,7 @@ header ul li a:hover  {
 
 /********** Recherche de logement **********/
 
-#section1 {
+.section1 {
     grid-column: span 2;
     grid-row: 2;
     margin: 0 40px 0 40px;
@@ -146,7 +150,7 @@ input {
 .filtres button  {
     display: flex;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 26px ;
     background-color: white;
     border: 2px solid #F2F2F2;
     border-radius: 25px;
@@ -155,15 +159,44 @@ input {
     font-weight: bold;
 }
 
-.filtres button i { 
+.fa-dog { 
     display: flex;
     align-items: center;
-    height: 25px;
-    width: 25px;
+    padding: 8px 10px 12px 10px;
     background-color: #DEEBFF;
     border: 1px solid #DEEBFF;
     border-radius: 50%;
-    margin-right: 10px;
+    margin: -1px 10px -5px 0;
+}
+
+.fa-heart { 
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #DEEBFF;
+    border: 1px solid #DEEBFF;
+    border-radius: 50%;
+    margin: -1px 10px -5px 0;
+}
+
+.fa-money-bill-wave {
+    display: flex;
+    align-items: center;
+    padding: 9px 9px 11px 9px;
+    background-color: #DEEBFF;
+    border: 1px solid #DEEBFF;
+    border-radius: 50%;
+    margin: -1px 10px -5px 0;
+}
+
+.fa-child {
+    display: flex;
+    align-items: center;
+    padding: 9px 12px 11px 12px;
+    background-color: #DEEBFF;
+    border: 1px solid #DEEBFF;
+    border-radius: 50%;
+    margin: -1px 10px -5px 0;
 }
 
 .filtres button:hover {
@@ -174,12 +207,19 @@ input {
 .info {
     display: flex;
     flex-direction: row;
+    margin-left: 30px ;
 }
 
-.info i{
-    margin-right: 10px;
+.fa-info{
     position: relative;
-    top: 6px;
+    top: 31px;
+    font-size: 14px;
+    padding: 4px 8px;
+    border: 1px solid #DEEBFF;
+    border-radius: 50%;
+    
+
+   
 }
 /******** Hébergements + Populaires ******/
 
@@ -277,6 +317,12 @@ input {
     line-height: 1.2rem;
 }
 
+.fa-chart-line {
+    position: absolute;
+    top: 480px;
+    right: 40px;
+    
+}
 
 .imgHebergement:hover, .imgPop:hover {
     transform:scale(1.05);
@@ -301,7 +347,7 @@ input {
 .activites {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 
@@ -309,12 +355,6 @@ input {
     height: 450px;
     width: 20%;
     margin: 20px;
-}
-
-.imgDoubles {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .fort {
@@ -388,4 +428,335 @@ margin: 20px 80px 20px 20px;
  }
  li {
      font-size: 12px;
+ }
+
+
+
+/*************** Version tablette *************/
+
+ @media only screen and (max-width: 848px) {
+
+ body {
+    
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    
+}
+
+header {
+    grid-row: 1;
+}
+
+header img {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    padding: 10px;
+    top: -10px;
+    right: 120px;
+}
+
+.sign {
+    position: absolute;
+    padding: 20px;
+    top: 60px;
+    right: 0;
+}
+
+.section1 {
+    grid-row: 2;
+} 
+
+h1 {
+    margin-top: 80px;
+}
+
+.animaux {
+    position: relative;
+    top: 15px;
+    left: 50px;
+}
+
+.section2 {
+    grid-row: 4;
+    grid-column: span 2;
+}
+
+.section3 {
+    grid-row: 3;
+    grid-column: span 2;
+    margin-left: 20px;
+}
+
+.fa-chart-line {
+    top: 520px;
+    
+    
+}
+
+.section4 {
+    grid-row: 5;
+}
+
+footer {
+    grid-row: 6;
+}
+
+.imgPop {
+    margin: 10px;
+    max-width: 80%;
+    
+}
+
+ }
+
+
+ /*********** Version Mobil *****/
+
+ @media only screen and (max-width: 650px) {
+
+
+/************* header ********/
+    .sign {
+        position: absolute;
+        padding: 20px;
+        top: 50px;
+        right: 0;
+    }
+
+    header {
+        margin: 0;
+        padding:0; 
+        display: flex;
+        width: 100%;
+    }
+
+    header ul {
+        position: inherit;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        margin: 30px auto 0 auto;
+    }
+
+    nav ul li {
+        margin-top: 40px;
+        padding: 0 50px 3px 50px;
+ 
+        border-bottom: 2px solid #F2F2F2;
+    }
+
+    header ul li a:hover  {
+
+        border-top: none;
+        
+    }
+
+    header ul li:hover  {
+        color: #0065FC;
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        transition: 0.3s all;
+    }
+
+/************* Recherche logement ********/
+
+    .searchD {
+        display: none;
+    }
+
+    .section1 h1 {
+        margin-top: 20px;
+    }
+
+    .section1 {
+        margin-left: 15px;
+    }
+    .searchM {
+        display: inline;
+        background-color: #0065FC;
+        border: none;
+        border-radius: 10px;
+        padding: 4px 12px 3px 12px;
+        margin-left: -10px;
+        cursor: pointer;
+    }
+
+    .fa-search {
+        color: white;
+    }
+
+    .filtres h3 {
+        margin-bottom: 100px;
+    }
+
+    .economique {
+        position: absolute;
+        top: 320px;
+        left: -8px;
+    }
+
+    .familial {
+        position: absolute;
+        top: 320px;
+        left: 150px;
+    }
+
+    .romantique {
+        position: absolute;
+        top: 370px;
+        left: -8px;
+    }
+
+    .animaux {
+        position: absolute;
+        top: 420px;
+        left: -8px;
+    }
+    
+/************* Hebergements ********/
+
+    .section2 {
+        background-color: white;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .imgHebergement {
+        margin: 10px;
+        width: 100%;
+    }
+
+/************* Populaires ********/
+
+    .section3 {
+        margin: 0;
+        border-radius: 0;
+        
+    }
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    .imgPop {
+        margin: 5px;
+        max-width: 90%;
+        height: 150px;
+    }
+
+    .fa-chart-line {
+        top: 540px;
+        right: 20px;
+        font-size: 20px;
+    
+    }
+    
+
+/********* Activites *******/
+
+    .activites {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .vieuxPort, .calanques {
+        width: 80%;
+        padding-bottom: 30px;
+       
+    }
+
+    .imgDouble {
+        width: 80%;
+        margin: 0 auto -30px auto;
+    }
+
+    .vieuxPort, .calanques, .parc, .notreDame, .frioul, .fort {
+        height: 180px;
+        margin: 10px auto 10px auto;
+    }
+
+    .vieuxPort, .calanques {
+        height: 150px;
+    }
+
+    .vieuxPort h4, .calanques h4, .parc h4, .notreDame h4, .frioul h4, .fort h4 {
+        text-align: left;
+        padding: 10px 0 0 10px;
+    }
+
+    .notreDame, .fort {
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    .frioul, .parc {
+        padding-bottom: 10px;
+    }
+
+/*********** Footer ********/
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footerlist {
+        margin-left: 10px;
+    }
+
+ }
+
+/********** Rectifs absolute *********/
+
+ @media only screen and (max-width: 503px) {
+
+    .economique {
+        position: absolute;
+        top: 350px;
+        left: -8px;
+    }
+
+    .familial {
+        position: absolute;
+        top: 350px;
+        left: 150px;
+    }
+
+    .romantique {
+        position: absolute;
+        top: 400px;
+        left: -8px;
+    }
+
+    .animaux {
+        position: absolute;
+        top: 450px;
+        left: -8px;
+    }
+
+    .fa-chart-line {
+        top: 575px;
+        right: 20px;
+    
+    }
+ }
+
+ @media only screen and (max-width: 386px) {
+    .fa-chart-line {
+        top: 605px;
+        right: 20px;
+    
+    }
+
+    nav ul li {
+        padding: 0 24px 3px 24px;
+    }
  }
