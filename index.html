@@ -14,8 +14,8 @@
         <img src="images/logo/Reservia@3x.png">
         <nav>
             <ul>
-                <li class="headHeb"><a href="#ancre1">Hébergements</a></li>
-                <li class="headActi"><a href="#ancre2">Activités</a></li>
+                <li class="headHeb"><a href="#hebergements">Hébergements</a></li>
+                <li class="headActi"><a href="#activites">Activités</a></li>
             </ul>
             <a class="sign" href="#">S'inscrire</a>
         </nav>
@@ -26,7 +26,7 @@
     <section class="section1">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
-        <form action="">
+        <form>
             <i class="fas fa-map-marker-alt"></i>
             <input type="text" placeholder="Marseille, France">
             <button class="searchM" type="submit"><i class="fas fa-search"></i></button>
@@ -34,10 +34,10 @@
         </form>
         <div class="filtres">
             <h3>Filtres</h3>
-            <button class="economique"><i class="fas fa-money-bill-wave"></i><a href="#"> Economique</a></button>
-            <button class="familial"><i class="fas fa-child"></i><a href=""> Familial</a></button>
-            <button class="romantique"><i class="fas fa-heart"></i><a href=""> Romantique</a></button>
-            <button class="animaux"><i class="fas fa-dog"></i><a href=""> Annimaux Autorisés</a></button>
+            <div class="btnTotal eco"><i class="fas fa-money-bill-wave"></i><button class="btnFiltres"><a href="#"> Economique</a></button></div>
+            <div class="btnTotal famille"><i class="fas fa-child"></i><button class="btnFiltres"><a href="#"> Familial</a></button></div>
+            <div class="btnTotal romantique"><i class="fas fa-heart"></i><button class="btnFiltres"><a href="#"> Romantique</a></button></div>
+            <div class="btnTotal animaux"><i class="fas fa-dog"></i><button class="btnFiltres"><a href="#"> Animaux</a></button></div>
         </div>
         <i class="fas fa-info"></i>
         <div class="info">
@@ -52,7 +52,7 @@
 <!-------Hebergements-------->
 
         <section class="section2">
-            <h2 id="ancre1">Hébérgements à Marseille</h2>
+            <h2 id="hebergements">Hébérgements à Marseille</h2>
 
             <div class="hebergements">
                 <a href="#" class="imgHebergement">
@@ -195,7 +195,7 @@
 
 <!--Section activités-->
     <section class="section4">
-        <h2 id="ancre2">Activités à Marseille</h2>
+        <h2 id="activites">Activités à Marseille</h2>
 
         <div class="activites">
 

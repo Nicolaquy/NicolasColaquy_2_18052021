@@ -92,9 +92,14 @@ header ul li {
     font-weight: bold;
 }
 
+.headHeb a {
+    border-top: 2px solid #0065fc;
+    color: #0065FC;
+}
+
 header ul li a:hover  {
     color: #0065FC;
-    border-top: 1.5px solid #0065fc;
+    border-top: 2px solid #0065fc;
     transition: 0.3s all;
 }
 
@@ -124,6 +129,42 @@ input {
     width: 150px;
     padding-left: 7px;
     outline: none;
+}
+
+.btnTotal {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.btnTotal .btnFiltres {
+    padding-left: 45px;
+}
+
+.btnTotal i {
+    margin-left: 30px;
+    margin-right: -64px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    background-color: #DEEBFF;
+    border: 1px solid #DEEBFF;
+    border-radius: 50%;
+}
+.btnTotal .fa-money-bill-wave {
+    padding: 0 8px;
+}
+
+.btnTotal .fa-child { 
+    padding: 0 12px;
+}
+
+.btnTotal .fa-heart { 
+    padding: 0 10px;
+}
+
+.btnTotal .fa-dog { 
+    padding: 0 9px;
 }
 
 .searchM {
@@ -159,46 +200,6 @@ input {
     font-weight: bold;
 }
 
-.fa-dog { 
-    display: flex;
-    align-items: center;
-    padding: 8px 10px 12px 10px;
-    background-color: #DEEBFF;
-    border: 1px solid #DEEBFF;
-    border-radius: 50%;
-    margin: -1px 10px -5px 0;
-}
-
-.fa-heart { 
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: #DEEBFF;
-    border: 1px solid #DEEBFF;
-    border-radius: 50%;
-    margin: -1px 10px -5px 0;
-}
-
-.fa-money-bill-wave {
-    display: flex;
-    align-items: center;
-    padding: 9px 9px 11px 9px;
-    background-color: #DEEBFF;
-    border: 1px solid #DEEBFF;
-    border-radius: 50%;
-    margin: -1px 10px -5px 0;
-}
-
-.fa-child {
-    display: flex;
-    align-items: center;
-    padding: 9px 12px 11px 12px;
-    background-color: #DEEBFF;
-    border: 1px solid #DEEBFF;
-    border-radius: 50%;
-    margin: -1px 10px -5px 0;
-}
-
 .filtres button:hover {
     background-color: #DEEBFF;
     transition: 0.3s all;
@@ -217,10 +218,8 @@ input {
     padding: 4px 8px;
     border: 1px solid #DEEBFF;
     border-radius: 50%;
-    
-
-   
 }
+
 /******** Hébergements + Populaires ******/
 
 
@@ -319,7 +318,7 @@ input {
 
 .fa-chart-line {
     position: absolute;
-    top: 480px;
+    top: 525px;
     right: 40px;
     
 }
@@ -402,7 +401,12 @@ input {
     line-height: 1.3rem;
     margin-left: 10px;
     margin-top: -10px;
+    padding-top: 10px;
     vertical-align: middle;
+}
+
+.activites .frioul h4 {
+    padding-top: 5px;
 }
 
 .vieuxPort:hover, .fort:hover, .frioul:hover, .notreDame:hover, .parc:hover, .calanques:hover {
@@ -419,7 +423,7 @@ footer {
  }
 
 .footerlist {
-margin: 20px 80px 20px 20px;
+margin: 20px;
 }
 
  .footerH {
@@ -478,9 +482,10 @@ h1 {
 }
 
 .animaux {
-    position: relative;
-    top: 15px;
-    left: 50px;
+    position: absolute;
+    top: 345px;
+    left: 90px;
+    margin-bottom: -50px;
 }
 
 .section2 {
@@ -502,6 +507,10 @@ h1 {
 
 .section4 {
     grid-row: 5;
+}
+
+.activites .calanques h4, .activites .notreDame h4 {
+    padding-top: 0;
 }
 
 footer {
@@ -549,9 +558,17 @@ footer {
 
     nav ul li {
         margin-top: 40px;
-        padding: 0 50px 3px 50px;
+        padding: 0 40px 3px 40px;
  
         border-bottom: 2px solid #F2F2F2;
+    }
+
+    .headHeb a {
+        border-top: none;
+    }
+
+    header ul .headHeb {
+        border-bottom: 2px solid #0065FC
     }
 
     header ul li a:hover  {
@@ -598,27 +615,27 @@ footer {
         margin-bottom: 100px;
     }
 
-    .economique {
+    .eco {
         position: absolute;
-        top: 320px;
+        top: 300px;
         left: -8px;
     }
 
-    .familial {
+    .famille {
         position: absolute;
-        top: 320px;
+        top: 300px;
         left: 150px;
     }
 
     .romantique {
         position: absolute;
-        top: 370px;
+        top: 350px;
         left: -8px;
     }
 
     .animaux {
         position: absolute;
-        top: 420px;
+        top: 400px;
         left: -8px;
     }
     
@@ -658,6 +675,10 @@ footer {
         right: 20px;
         font-size: 20px;
     
+    }
+
+    .activites .frioul h4,.activites .calanques h4, .activites .notreDame h4 {
+        padding-top: 10px;
     }
     
 
@@ -718,27 +739,27 @@ footer {
 
  @media only screen and (max-width: 503px) {
 
-    .economique {
+    .eco {
         position: absolute;
-        top: 350px;
+        top: 330px;
         left: -8px;
     }
 
-    .familial {
+    .famille {
         position: absolute;
-        top: 350px;
+        top: 330px;
         left: 150px;
     }
 
     .romantique {
         position: absolute;
-        top: 400px;
+        top: 380px;
         left: -8px;
     }
 
     .animaux {
         position: absolute;
-        top: 450px;
+        top: 430px;
         left: -8px;
     }
 
