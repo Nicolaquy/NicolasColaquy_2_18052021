@@ -139,6 +139,7 @@ input {
 
 .btnTotal .btnFiltres {
     padding-left: 45px;
+    cursor: pointer;
 }
 
 .btnTotal i {
@@ -202,6 +203,7 @@ input {
 
 .filtres button:hover {
     background-color: #DEEBFF;
+    border-color: #DEEBFF;
     transition: 0.3s all;
 }
 
@@ -312,7 +314,7 @@ input {
 }
 
 .textPop h4 {
-    font-weight: 14px;
+    font-size: 14px;
     line-height: 1.2rem;
 }
 
@@ -438,14 +440,26 @@ margin: 20px;
 
 /*************** Version tablette *************/
 
- @media only screen and (max-width: 848px) {
+@media only screen and (max-width: 960px) {
+
+    .vieuxPort, .imgDouble, .calanques {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .calanques h4, .notreDame h4 {
+        padding-top: 3px;
+    }
+}
+@media only screen and (max-width: 848px) {
 
  body {
     
     display: grid;
     grid-template-rows: repeat(6, auto);
-    
 }
+
+/****** Header ******/
 
 header {
     grid-row: 1;
@@ -473,6 +487,8 @@ header ul {
     right: 0;
 }
 
+/******* Recherche logement ******/
+
 .section1 {
     grid-row: 2;
 } 
@@ -488,10 +504,14 @@ h1 {
     margin-bottom: -50px;
 }
 
+/***** Hebergements *******/
+
 .section2 {
     grid-row: 4;
     grid-column: span 2;
 }
+
+/*********** Meilleurs logements *******/
 
 .section3 {
     grid-row: 3;
@@ -501,9 +521,14 @@ h1 {
 
 .fa-chart-line {
     top: 520px;
-    
-    
 }
+
+.imgPop {
+    margin: 10px;
+    max-width: 70%;
+}
+
+/********* Activités *********/
 
 .section4 {
     grid-row: 5;
@@ -513,17 +538,13 @@ h1 {
     padding-top: 0;
 }
 
+
+/********* Footer ********/
+
 footer {
     grid-row: 6;
 }
-
-.imgPop {
-    margin: 10px;
-    max-width: 80%;
-    
 }
-
- }
 
 
  /*********** Version Mobil *****/
@@ -559,7 +580,6 @@ footer {
     nav ul li {
         margin-top: 40px;
         padding: 0 40px 3px 40px;
- 
         border-bottom: 2px solid #F2F2F2;
     }
 
@@ -572,9 +592,7 @@ footer {
     }
 
     header ul li a:hover  {
-
         border-top: none;
-        
     }
 
     header ul li:hover  {
@@ -597,6 +615,7 @@ footer {
     .section1 {
         margin-left: 15px;
     }
+
     .searchM {
         display: inline;
         background-color: #0065FC;
@@ -656,8 +675,7 @@ footer {
 
     .section3 {
         margin: 0;
-        border-radius: 0;
-        
+        border-radius: 0; 
     }
 
     h2 {
@@ -674,7 +692,6 @@ footer {
         top: 540px;
         right: 20px;
         font-size: 20px;
-    
     }
 
     .activites .frioul h4,.activites .calanques h4, .activites .notreDame h4 {
@@ -774,10 +791,9 @@ footer {
     .fa-chart-line {
         top: 605px;
         right: 20px;
-    
     }
 
     nav ul li {
         padding: 0 24px 3px 24px;
     }
- }
+}
