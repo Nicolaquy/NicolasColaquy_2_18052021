@@ -275,6 +275,7 @@ input {
     margin: 50px 0 0 20px;
 }
 .section3 {
+    position: relative;
     grid-column: 2;
     grid-row: 3;
     padding: 20px 15px 40px 15px;
@@ -320,8 +321,8 @@ input {
 
 .fa-chart-line {
     position: absolute;
-    top: 525px;
-    right: 40px;
+    top: 25px;
+    right: 20px;
     
 }
 
@@ -519,10 +520,6 @@ h1 {
     margin-left: 20px;
 }
 
-.fa-chart-line {
-    top: 520px;
-}
-
 .imgPop {
     margin: 10px;
     max-width: 70%;
@@ -689,8 +686,6 @@ footer {
     }
 
     .fa-chart-line {
-        top: 540px;
-        right: 20px;
         font-size: 20px;
     }
 
@@ -779,19 +774,9 @@ footer {
         top: 430px;
         left: -8px;
     }
-
-    .fa-chart-line {
-        top: 575px;
-        right: 20px;
-    
-    }
  }
 
  @media only screen and (max-width: 386px) {
-    .fa-chart-line {
-        top: 605px;
-        right: 20px;
-    }
 
     nav ul li {
         padding: 0 24px 3px 24px;
