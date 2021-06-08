@@ -97,11 +97,11 @@ header ul li {
     color: #0065FC;
 }
 
-header ul li a:hover  {
+/**header ul li a:hover  {
     color: #0065FC;
     border-top: 2px solid #0065fc;
     transition: 0.3s all;
-}
+}**/
 
 .fa-map-marker-alt, .fa-chart-line {
     color: black;
@@ -201,11 +201,11 @@ input {
     font-weight: bold;
 }
 
-.filtres button:hover {
+/**.filtres button:hover {
     background-color: #DEEBFF;
     border-color: #DEEBFF;
     transition: 0.3s all;
-}
+}**/
 
 .info {
     display: flex;
@@ -326,10 +326,10 @@ input {
     
 }
 
-.imgHebergement:hover, .imgPop:hover {
+/**.imgHebergement:hover, .imgPop:hover {
     transform:scale(1.05);
     transition: all 0.2s ease-in-out;
-}
+}**/
 
 
 
@@ -412,10 +412,10 @@ input {
     padding-top: 5px;
 }
 
-.vieuxPort:hover, .fort:hover, .frioul:hover, .notreDame:hover, .parc:hover, .calanques:hover {
+/**.vieuxPort:hover, .fort:hover, .frioul:hover, .notreDame:hover, .parc:hover, .calanques:hover {
     transform:scale(1.03);
     transition: all 0.2s ease-in-out;
-}
+}**/
 
 /*********** Footer ************/
 footer {
@@ -437,7 +437,12 @@ margin: 20px;
      font-size: 12px;
  }
 
+ @media only screen and (max-width: 1023px) {
 
+    .imgHebergement {
+        width: 45%;
+    }
+ }
 
 /*************** Version tablette *************/
 
@@ -588,7 +593,7 @@ footer {
         border-bottom: 2px solid #0065FC
     }
 
-    header ul li a:hover  {
+    /**header ul li a:hover  {
         border-top: none;
     }
 
@@ -597,7 +602,7 @@ footer {
         border-top: none;
         border-bottom: 2px solid #0065FC;
         transition: 0.3s all;
-    }
+    }**/
 
 /************* Recherche logement ********/
 
