@@ -201,11 +201,11 @@ input {
     font-weight: bold;
 }
 
-/**.filtres button:hover {
+.filtres button:hover {
     background-color: #DEEBFF;
     border-color: #DEEBFF;
     transition: 0.3s all;
-}**/
+}
 
 .info {
     display: flex;
@@ -405,11 +405,11 @@ input {
     margin-left: 10px;
     margin-top: -10px;
     padding-top: 10px;
-    vertical-align: middle;
 }
 
 .activites .frioul h4 {
     padding-top: 5px;
+    
 }
 
 /**.vieuxPort:hover, .fort:hover, .frioul:hover, .notreDame:hover, .parc:hover, .calanques:hover {
