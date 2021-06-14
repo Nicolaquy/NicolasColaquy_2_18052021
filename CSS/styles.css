@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 * {
     font-family: 'Raleway', 'Courier New', Courier, monospace;
@@ -79,7 +79,8 @@ nav {
 }
 
 nav a {
-    padding: 3em 2em;
+    padding: 3em 0;
+    font-size: 14px;
 }
 
 .sign {
@@ -88,11 +89,12 @@ margin: -3em 1em 0 2em;
 
 header ul li {
     display: inline;
-    padding: 30px 40px ;
+    padding: 30px;
     font-weight: bold;
 }
 
 .headHeb a {
+    padding-top: 36px;
     border-top: 2px solid #0065fc;
     color: #0065FC;
 }
@@ -244,7 +246,7 @@ input {
     width: 30%;
     min-width: 200px;
     max-width: 350px;
-    height: 240px;
+    height: 180px;
     background-color: white;
     padding: 3px;
     margin: 20px 3px 20px 3px;
@@ -271,6 +273,9 @@ input {
     margin-left: 5px;
 }
 
+.rating {
+    margin-top: -28px;
+}
  h5 {
     margin: 50px 0 0 20px;
 }
@@ -292,6 +297,7 @@ input {
 .imgPop {
     display: flex;
     flex-direction: row;
+    position: relative;
     background-color: white;
     height: 150px;
     width: 100%;
@@ -306,6 +312,7 @@ input {
 
 .imgPop img {
     width: 40%;
+    min-width: 40%;
     border-radius: 20px 0 0 20px;
     object-fit: cover;
 }
@@ -317,6 +324,12 @@ input {
 .textPop h4 {
     font-size: 14px;
     line-height: 1.2rem;
+}
+
+.pop {
+    position: absolute;
+    bottom: 5px;
+    left: 42%;
 }
 
 .fa-chart-line {
@@ -423,6 +436,8 @@ footer {
      grid-row: 5;
      display: flex;
      flex-direction: row;
+     justify-content: space-between;
+     padding-right: 25%;
  }
 
 .footerlist {
@@ -434,7 +449,7 @@ margin: 20px;
     font-weight: bold;
  }
  li {
-     font-size: 12px;
+     font-size: 14px;
  }
 
  @media only screen and (max-width: 1023px) {
@@ -545,6 +560,7 @@ h1 {
 
 footer {
     grid-row: 6;
+    padding-right: 20px;
 }
 }
 
@@ -623,8 +639,8 @@ footer {
         background-color: #0065FC;
         border: none;
         border-radius: 10px;
-        padding: 4px 12px 3px 12px;
-        margin-left: -10px;
+        padding: 4px 15px 3px 15px;
+        margin-left: -25px;
         cursor: pointer;
     }
 
@@ -744,6 +760,7 @@ footer {
 
     footer {
         flex-direction: column;
+        padding-top: 20px;
     }
 
     .footerlist {
@@ -755,6 +772,24 @@ footer {
 /********** Rectifs absolute *********/
 
  @media only screen and (max-width: 503px) {
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 10px;
+    }
+
+    input {
+        width: 70%;
+        height: 40px;
+    }
+
+    .fa-map-marker-alt {
+        padding: 12px 15px 9px 15px;
+        margin-right: -20px;
+    }
 
     .eco {
         position: absolute;
@@ -782,6 +817,11 @@ footer {
  }
 
  @media only screen and (max-width: 386px) {
+
+    .fa-map-marker-alt {
+        padding: 12px 15px 9px 15px;
+        margin-right: -12px;
+    }
 
     nav ul li {
         padding: 0 24px 3px 24px;
